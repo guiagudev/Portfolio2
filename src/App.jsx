@@ -1,19 +1,22 @@
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import Hero from './pages/Hero';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-  <div>
-    <Navbar />
-    <section id="hero" style={{ height: "100vh", background: "#f0f0f0" }}>
-      
-    </section>
-    <section id="projects" style={{ height: "100vh" }}>
-      <h2>Projects Section</h2>
-    </section>
-    <section id="contact" style={{ height: "100vh" }}>
-      <h2>Contact section</h2>
-    </section>
-  </div>
-  )
+    <div className="font-sans text-gray-800">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
+
 export default App;
